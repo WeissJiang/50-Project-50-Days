@@ -1,0 +1,113 @@
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #666;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin space between numbers and buttons */
+    margin-bottom: 30px;  
+    width: 350px;
+    position: relative;
+}
+
+/* draw a line
+ * <div class="progress" id="progress"></div>
+ * 这个<div>中没有任何值，所以1不是第一位，而是这个空值所占的位置在第一位
+ * 因为是空值，所以它的高度和颜色都是<div>所占的背景，所以看起来像是一条线
+ */
+
+ /* 下面的灰色线条 */
+.progress-container::before{
+    content: "";
+    background: var(--line-border-empty);
+    /* 摆好灰色线条的位置 */
+    position: absolute;
+    height: 4px;
+    top: 50%;
+    margin-top: -2px;
+    /* 把灰色线条放到数字层的底下 */
+    z-index: -1;
+
+    width: 100%;
+}
+/* 上面的蓝色线条 */
+.progress{
+    background-color: var(--line-border-fill);
+    /* 对齐灰色线条的位置 */
+    position: absolute;
+    height: 4px;
+    top: 50%;
+    margin-top: -2px;
+    /* 把蓝色线条放到数字层的底下 */
+    z-index: -1;
+
+    /* width大于零时，就能看到蓝色线条覆盖在灰色线条上 */
+    width: 0%;
+
+    transition: width .3s ease;
+}
+
+.circle{
+    background: #fff;
+    color: #999;
+    /* 设置一个原型 */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    /* 水平居中 */
+    justify-content: center; 
+    /* 垂直居中 */
+    align-items: center;
+    border: 4px solid var(--line-border-empty);
+    transition: .3s ease;
+}
+
+.circle.active{
+    border-color: var(--line-border-fill);
+}
+
+/* 按钮部分的CSS */
+.btn{
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border-radius: 3px;
+    /* 去掉边框 */
+    border: 0;
+    padding: 8px 30px;
+    margin: 20px;
+}
+.btn:hover{
+    background-color: var(--line-border-empty);
+    color: var(--line-border-fill);
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    color: var(--line-border-fill);
+    cursor: not-allowed;
+}
