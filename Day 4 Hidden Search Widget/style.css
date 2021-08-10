@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, #7d5fff, #7158e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search{
+    height: 50px;
+    position: relative;
+}
+
+.search input{
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    transition: width .3s linear;
+}
+
+.btn{
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+
+    /* position: absolute; 元素只是在原来的位置上浮，需要添加具体定位left: 0; 才能相对父元素定位*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    transition: transform .3s linear;
+}
+
+/* 删除外轮廓，默认是白色的边框 */
+.btn:focus, input:focus{
+    outline: 0;
+}
+
+.search.active input{
+    width: 200px;
+}
+
+.search.active button{
+    transform: translateX(198px);
+}
