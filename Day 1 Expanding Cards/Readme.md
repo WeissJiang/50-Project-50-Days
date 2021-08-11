@@ -6,13 +6,23 @@ justify-cotent (默认主轴或者横轴居中)
 align-items (默认次轴或者竖轴居中)
 
 ## CSS property概念
+### box-sizing
+The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+#### Property values:   
+* content-box: DefaulThe width and height properties (and min/max properties) includes only the content. Border and padding are not included.   
+* border-box: The width and height properties (and min/max properties) includes content, padding and border.   
+* initial: Sets this property to its default value. Read about initial.   
+* inherit: Inherits this property from its parent element. Read about inherit.   
+
 ### height
-vh: 视口的初始包含块的高度的 1%。   
-vw: 视口的初始包含块的宽度的 1%。
+#### Property values:   
+* vh: 视口的初始包含块的高度的 1%。   
+* vw: 视口的初始包含块的宽度的 1%。
 ### background-size
-auto: 以背景图片的比例缩放背景图片。   
-cover: 缩放背景图片以完全覆盖背景区，可能背景图片部分看不见。和 contain 值相反，cover 值尽可能大的缩放背景图像并保持图像的宽高比例（图像不会被压扁）。该背景图以它的全部宽或者高覆盖所在容器。当容器和背景图大小不同时，背景图的 左/右 或者 上/下 部分会被裁剪。   
-contain: 缩放背景图片以完全装入背景区，可能背景区部分空白。contain 尽可能的缩放背景并保持图像的宽高比例（图像不会被压缩）。该背景图会填充所在的容器。当背景图和容器的大小的不同时，容器的空白区域（上/下或者左/右）会显示由 background-color 设置的背景颜色。 
+#### Property values:   
+* auto: 以背景图片的比例缩放背景图片。   
+* cover: 缩放背景图片以完全覆盖背景区，可能背景图片部分看不见。和 contain 值相反，cover 值尽可能大的缩放背景图像并保持图像的宽高比例（图像不会被压扁）。该背景图以它的全部宽或者高覆盖所在容器。当容器和背景图大小不同时，背景图的 左/右 或者 上/下 部分会被裁剪。   
+* contain: 缩放背景图片以完全装入背景区，可能背景区部分空白。contain 尽可能的缩放背景并保持图像的宽高比例（图像不会被压缩）。该背景图会填充所在的容器。当背景图和容器的大小的不同时，容器的空白区域（上/下或者左/右）会显示由 background-color 设置的背景颜色。 
 ### position
 子绝父相  
 要使h3的定位是相对于panel，则需要在.panel()中，设置position: relative, 否则h3则会相对于html绝对定位。

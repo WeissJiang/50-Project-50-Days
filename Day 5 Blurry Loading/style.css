@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-text{
+    font-size: 50px;
+    color: 6f845e;
+}  
+
+.bg{
+    background: url('https://media.timeout.com/images/105608214/image.jpg') no-repeat center/cover;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    left: -30px;
+
+    /* 为了把blurry的白便往浏览器窗口外挪一点
+     * 需要加上
+     *width: calc(100vw + 60px);
+     * height: calc(100vh + 60px);
+     * top: -30px;
+     * left: -30px;
+     */
+}
+
