@@ -7,10 +7,10 @@
 
 ## Projects
 
-- [Day 1 Expanding Cards](./Day 1 Expanding Cards/)
-- [Day 2 Progress Steps](./Day 2 Progress Steps/)
-- [Day 3 Rotating Nav Animation](./Day 3 Rotating Nav Animation/)
-- [Day 4 Hidden Search Widget](./Day 4 Hidden Search Widget/)
-- [Day 5 Blurry Loading ](./Day 5 Blurry Loading/)
-- [Day 6 Scroll Animation](./Day 6 Scroll Animation/)
+- [Day 1 Expanding Cards](./Day%201%20Expanding%20Cards/)
+- [Day 2 Progress Steps](./Day%202%20Progress%20Steps/)
+- [Day 3 Rotating Nav Animation](./Day%203%20Rotating%20Nav%20Animation/)
+- [Day 4 Hidden Search Widget](./Day%204%20Hidden%20Search%20Widget/)
+- [Day 5 Blurry Loading ](./Day%205%20Blurry%20Loading/)
+- [Day 6 Scroll Animation](./Day%206%20Scroll%20Animation/)
 
