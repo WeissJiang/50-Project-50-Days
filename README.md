@@ -13,4 +13,4 @@
 - [Day 4 Hidden Search Widget](./Day%204%20Hidden%20Search%20Widget/)
 - [Day 5 Blurry Loading ](./Day%205%20Blurry%20Loading/)
 - [Day 6 Scroll Animation](./Day%206%20Scroll%20Animation/)
-
+- [Day 7 Split Landing Page](./Day%207%20Split%20Landing%20Page)
