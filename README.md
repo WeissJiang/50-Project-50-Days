@@ -14,3 +14,5 @@
 - [Day 5 Blurry Loading ](./Day%205%20Blurry%20Loading/)
 - [Day 6 Scroll Animation](./Day%206%20Scroll%20Animation/)
 - [Day 7 Split Landing Page](./Day%207%20Split%20Landing%20Page)
+- [Day 8 Form Input Wave](./Day%208%20Form%20Input%20Wave)
+- [Day 9 Sound Board](./Day%209%20Sound%20Board)
