@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a164df;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 换行的元素也可以对齐 */
+    text-align: center;
+}
+
+#buttons{
+    width: 400px;
+}
+
+.btn{
+    background-color: #663399;
+    border-radius: 5px;
+    border: none;
+    margin: 16px;
+    padding: 24px 32px;
+    font-size: 20px;
+    color: white;
+    font-family: inherit;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn:active{
+    transform: scale(0.98);
+}
